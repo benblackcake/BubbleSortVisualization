@@ -35,7 +35,7 @@ public class AlgorithmVisualize {
 			boolean flag=false;
 			for(int j=0;j<i;j++) {
 				//setDatas(j,i);
-				if(bubbleSortDatas.get(j)>=bubbleSortDatas.get(j+1)) {
+				if(bubbleSortDatas.get(j)>bubbleSortDatas.get(j+1)) {
 					bubbleSortDatas.swap(j, j+1);
 					setDatas(j,i);
 					flag=true;

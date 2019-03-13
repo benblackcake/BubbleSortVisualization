@@ -43,9 +43,9 @@ public class BubbleSortFrame extends JFrame{
     private class BubbleSortPanel extends JPanel{
 
 		@Override
-		public void paintComponent(Graphics arg0) {
+		public void paint(Graphics arg0) {
 			
-			super.paintComponent(arg0);
+			super.paint(arg0);
 			
 			Graphics2D graphics2d =(Graphics2D)arg0;
 			
@@ -63,9 +63,6 @@ public class BubbleSortFrame extends JFrame{
 				}
             	BubbleSortHelper.fillRectangle(graphics2d, i * w, canvasHeight - bubbleSortDatas.get(i), w -2, bubbleSortDatas.get(i));
             }
-			
 		}
-    	
-    	
     }
 }
