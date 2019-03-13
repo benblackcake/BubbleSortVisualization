@@ -5,6 +5,7 @@ import ViewFrame.BubbleSortHelper;
 
 public class AlgorithmVisualize {
 	
+	private static final int DELAY = 1;
 	private Data bubbleSortDatas;
 	private BubbleSortFrame bubbleSortFrame;
 	
@@ -33,14 +34,19 @@ public class AlgorithmVisualize {
 			setDatas(0, i);
 			boolean flag=false;
 			for(int j=0;j<i;j++) {
+				//setDatas(j,i);
 				if(bubbleSortDatas.get(j)>=bubbleSortDatas.get(j+1)) {
 					bubbleSortDatas.swap(j, j+1);
 					setDatas(j,i);
 					flag=true;
 				}
+				
 			}
 			
-			if(flag==false)break;
+			if(flag==false) {
+				setDatas(0,i);
+				break;
+			}
 		}
 	}
 	
@@ -55,7 +61,7 @@ public class AlgorithmVisualize {
 		}
 		
 		bubbleSortFrame.render(bubbleSortDatas);
-		BubbleSortHelper.pause(40);
+		BubbleSortHelper.pause(DELAY);
 	}
 	
 	
