@@ -84,6 +84,7 @@ public class AlgorithmVisualize {
 		int height=800;
 		int N=100;
 		AlgorithmVisualize algvi=new AlgorithmVisualize(width, height, N);
+		AlgorithmVisualize a =new AlgorithmVisualize(width,height);
 		
 	}
 
