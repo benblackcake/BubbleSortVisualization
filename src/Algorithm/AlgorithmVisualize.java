@@ -20,6 +20,11 @@ public class AlgorithmVisualize {
 		printData();
 		
 	}
+	public AlgorithmVisualize(int a ,int b){
+		//.....
+		//.....
+	
+	}
 	
 	
 	private void run() {
